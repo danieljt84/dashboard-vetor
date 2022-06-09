@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-3">
+    <div class="col-lg-3 pt-4">
       <app-card>
         <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
         <div class="ms-3">
@@ -9,30 +9,42 @@
         </div>
       </app-card>
     </div>
-    <div class="col-lg-3">
-      <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+    <div class="col-lg-3 pt-4">
+      <app-card>
         <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
         <div class="ms-3">
           <p class="mb-2 name-value">Verba Total</p>
           <h6 class="mb-0">R$1234</h6>
         </div>
-      </div>
+      </app-card>
     </div>
-    <div class="col-lg-3">
-      <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+    <div class="col-lg-3 pt-4">
+      <app-card>
         <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
         <div class="ms-3">
           <p class="mb-2 name-value">Verba Utilizada</p>
           <h6 class="mb-0">R$1234</h6>
         </div>
-      </div>
+      </app-card>
     </div>
-    <div class="col-lg-3">
-      <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+    <div class="col-lg-3 pt-4">
+      <app-card>
         <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
         <div class="ms-3">
           <p class="mb-2 name-value">Previsão Venda</p>
           <h6 class="mb-0">R$1234</h6>
+        </div>
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 pt-4">
+      <app-chart-faturamento></app-chart-faturamento>
+    </div>
+    <div class="col-lg-8 pt-4">
+      <div class="row">
+        <div class="col-lg-6">
+          <app-chart-verba></app-chart-verba>
         </div>
       </div>
     </div>

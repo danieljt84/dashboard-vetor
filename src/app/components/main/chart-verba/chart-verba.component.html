@@ -1,0 +1,15 @@
+<div class="bg-secondary text-center rounded p-4">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h6 class="mb-0">Verba da Semana x Verba Utilizada</h6>
+  </div>
+  <div>
+    <canvas
+    baseChart
+    class="chart-bar"
+    [datasets]="barChartData"
+    [options]="barChartOptions"
+    [labels]="chartLabels"
+  >
+  </canvas>
+  </div>
+</div>
