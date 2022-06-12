@@ -1,52 +1,63 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-3 pt-4">
-      <app-card>
-        <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
-        <div class="ms-3">
-          <p class="mb-2 name-value">Verba Disponível</p>
-          <h6 class="mb-0">R$1234</h6>
+<app-nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 pt-4">
+        <app-card>
+          <i class="fa fa-chart-pie fa-3x text-primary"></i>
+          <div class="ms-3">
+            <h5 class="mb-2 name-value">Verba Disponível</h5>
+            <h6 class="mb-0">R$1234</h6>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-lg-3 pt-4">
+        <app-card>
+          <i class="fa fa-chart-bar fa-3x text-primary"></i>
+          <div class="ms-3">
+            <h5 class="mb-2 name-value">Verba Total</h5>
+            <h6 class="mb-0">R$1234</h6>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-lg-3 pt-4">
+        <app-card>
+          <i class="fa fa-chart-area fa-3x text-primary"></i>
+          <div class="ms-3">
+            <h5 class="mb-2 name-value">Verba Utilizada</h5>
+            <h6 class="mb-0">R$1234</h6>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-lg-3 pt-4">
+        <app-card>
+          <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
+          <div class="ms-3">
+            <h5 class="mb-2 name-value">Previsão Venda</h5>
+            <h6 class="mb-0">R$1234</h6>
+          </div>
+        </app-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 pt-4">
+        <app-chart-faturamento></app-chart-faturamento>
+      </div>
+      <div class="col-lg-8 pt-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <app-chart-verba></app-chart-verba>
+          </div>
+          <div class="col-lg-6">
+            <app-chart-termometro></app-chart-termometro>
+          </div>
         </div>
-      </app-card>
-    </div>
-    <div class="col-lg-3 pt-4">
-      <app-card>
-        <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
-        <div class="ms-3">
-          <p class="mb-2 name-value">Verba Total</p>
-          <h6 class="mb-0">R$1234</h6>
-        </div>
-      </app-card>
-    </div>
-    <div class="col-lg-3 pt-4">
-      <app-card>
-        <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
-        <div class="ms-3">
-          <p class="mb-2 name-value">Verba Utilizada</p>
-          <h6 class="mb-0">R$1234</h6>
-        </div>
-      </app-card>
-    </div>
-    <div class="col-lg-3 pt-4">
-      <app-card>
-        <i class="fa-solid fa-chart-line fa-3x text-primary"></i>
-        <div class="ms-3">
-          <p class="mb-2 name-value">Previsão Venda</p>
-          <h6 class="mb-0">R$1234</h6>
-        </div>
-      </app-card>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4 pt-4">
-      <app-chart-faturamento></app-chart-faturamento>
-    </div>
-    <div class="col-lg-8 pt-4">
-      <div class="row">
-        <div class="col-lg-6">
-          <app-chart-verba></app-chart-verba>
+        <div class="row">
+          <div class="col-lg-12 pt-4">
+            <app-chart-verba-diaria></app-chart-verba-diaria>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+</app-nav>

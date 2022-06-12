@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-
-.bg-secondary{
+.bg-secondary-color{
     background-color: #ffffff !important
   }
-  
+
   h6, .name-value{
     color: rgb(0, 0, 0);
   }
@@ -14,4 +13,19 @@ body{
   background: linear-gradient(90deg, rgba(0,4,40,1) 5%, rgba(0,56,105,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000428",endColorstr="#003869",GradientType=1);
 }
- 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.nav-link:hover{
+  color: orange;
+}
+
+:root {
+  --primary: #EB1616;
+  --secondary: #191C24;
+  --light: #6C7293;
+  --dark: #000000;
+}

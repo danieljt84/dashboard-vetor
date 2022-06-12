@@ -35,7 +35,7 @@ export class ChartFaturamentoComponent implements OnInit {
          }
       }
     }
-    
+
   };
   public chartLabels = ['Loja 1', 'Loja 2', 'Loja 3', 'Loja 4', 'Loja 5'];
   public barChartData: ChartDataset[] = [
