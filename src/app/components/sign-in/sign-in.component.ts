@@ -13,8 +13,9 @@ export class SignInComponent implements OnInit {
 
   userName: FormControl;
   password: FormControl;
+  showModal = false;
 
-  constructor(private route: Router, private modalService: NgbModal) { }
+  constructor(private route: Router,private modalService: NgbModal) { }
 
   ngOnInit(): void {
     this.userName = new FormControl('');
@@ -26,8 +27,8 @@ export class SignInComponent implements OnInit {
     if (this.userName.value == "usuario" && this.password.value == "1234") {
       this.route.navigate(['main']);
     } else {
-      const modalRef = this.modalService.open(ModalComponent)
-      modalRef.componentInstance.my_modal_content = "Usuario ou senha incorretos"
+      const modalRef = this.modalService.open(ModalComponent);
+      modalRef.componentInstance.body = 'Usuário e/ou senha incorretos';
     }
   }
 }

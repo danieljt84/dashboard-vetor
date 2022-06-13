@@ -8,8 +8,8 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalComponent implements OnInit {
 
-  @Input() my_modal_title: any;
-  @Input() my_modal_content: any;
+  @Input() title: any;
+  @Input() body: any;
 
   constructor(public activeModal: NgbActiveModal) { }
 

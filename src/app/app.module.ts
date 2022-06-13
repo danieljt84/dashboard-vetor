@@ -13,8 +13,8 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './components/shared/nav/nav.component';
-import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { ModalComponent } from './components/shared/modal/modal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -34,7 +34,7 @@ import { ModalComponent } from './components/shared/modal/modal.component';
     ModalComponent
   ],
   imports: [BrowserModule,BrowserAnimationsModule, AppRoutingModule, NgChartsModule,FormsModule,
-    ReactiveFormsModule, BrowserAnimationsModule,NgbModule],
+    ReactiveFormsModule, BrowserAnimationsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
