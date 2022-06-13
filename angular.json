@@ -1,13 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "budgets": [
-    {
-       "type": "initial",
-       "maximumWarning": "2mb",
-       "maximumError": "5mb"
-    }
- ],
   "newProjectRoot": "projects",
   "projects": {
     "dashboard-vetor": {
@@ -42,8 +35,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
