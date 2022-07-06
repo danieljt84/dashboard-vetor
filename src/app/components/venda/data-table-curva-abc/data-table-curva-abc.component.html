@@ -1,0 +1,98 @@
+<div class="bg-secondary-color text-center rounded p-2">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h5 class="mb-0">Curva ABC</h5>
+  </div>
+  <div class="row">
+    <ng-container *ngIf="isLoading">
+        <app-loading></app-loading>
+    </ng-container>
+    <ng-container *ngIf="!isLoading">
+        <div class="col-lg-4"style="height: 450px;" >
+            <p-table [value]="curvaA.produtoCurvaABC" [scrollable]="true"
+            scrollHeight="flex"
+            responsiveLayout="scroll">
+            <ng-template pTemplate="caption">
+                Curva A
+            </ng-template>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Produto</th>
+                    <th>Faturamento</th>
+                    <th>Percentual</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-curva>
+                <tr>
+                    <td>{{curva.produto}}</td>
+                    <td>{{curva.faturamentoTotal | currency : 'R$'}}</td>
+                    <td>{{curva.percentual}}%</td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="summary">
+                <div class="d-flex justify-content-around" style="width: 100%;">
+                    <span>Total: {{curvaA.countItems}}</span>
+                    <span>Faturamento total: {{curvaA.faturamentoTotal | currency : 'R$'}}</span>
+                  </div>
+            </ng-template>
+        </p-table>
+        
+        </div>
+        <div class="col-lg-4" style="height: 450px;">
+            <p-table [value]="curvaB.produtoCurvaABC"  [scrollable]="true"
+            scrollHeight="flex" responsiveLayout="scroll">
+                <ng-template pTemplate="caption">
+                    Curva B
+                </ng-template>
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Faturamento</th>
+                        <th>Percentual</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-curva>
+                    <tr>
+                        <td>{{curva.produto}}</td>
+                        <td>{{curva.faturamentoTotal | currency : 'R$'}}</td>
+                        <td>{{curva.percentual}}%</td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="summary">
+                   <div class="d-flex justify-content-around" style="width: 100%;">
+                     <span>Total: {{curvaB.countItems}}</span>
+                     <span>Faturamento total: {{curvaB.faturamentoTotal | currency : 'R$'}}</span>
+                   </div>
+                </ng-template>
+            </p-table>
+        </div>
+        <div class="col-lg-4" style="height: 450px;">
+            <p-table [value]="curvaC.produtoCurvaABC" [scrollable]="true"
+            scrollHeight="flex" responsiveLayout="scroll">
+                <ng-template pTemplate="caption">
+                    Curva C
+                </ng-template>
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Faturamento</th>
+                        <th>Percentual</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-curva>
+                    <tr>
+                        <td>{{curva.produto}}</td>
+                        <td>{{curva.faturamentoTotal | currency : 'R$'}}</td>
+                        <td>{{curva.percentual}}%</td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="summary">
+                    <div class="d-flex justify-content-around" style="width: 100%;">
+                        <span>Total: {{curvaC.countItems}}</span>
+                        <span>Faturamento total: {{curvaC.faturamentoTotal | currency : 'R$'}}</span>
+                      </div>
+                </ng-template>
+            </p-table>
+        </div>
+    </ng-container>
+  </div>
+</div>

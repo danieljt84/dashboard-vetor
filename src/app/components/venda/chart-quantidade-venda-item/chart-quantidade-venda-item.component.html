@@ -1,0 +1,21 @@
+<div class="bg-secondary-color text-center rounded p-4">
+  <ng-container *ngIf="!isLoading">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <h5 class="mb-0">Quantidade de vendas por item</h5>
+    </div>
+    <div>
+      <canvas
+      baseChart
+      class="chart-bar"
+      [datasets]="barChartData"
+      [options]="barChartOptions"
+      [labels]="chartLabels"
+    >
+    </canvas>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="isLoading">
+    <app-loading></app-loading>
+  </ng-container>
+  </div>
+  

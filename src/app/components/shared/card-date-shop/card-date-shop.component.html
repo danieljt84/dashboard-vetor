@@ -1,0 +1,33 @@
+<div
+  class="bg-secondary-color rounded d-flex align-items-center justify-content-around p-2"
+>
+  <div style="display: flex; align-items: center" class="m-1">
+    <label class="p-1" for="loja-select">Loja:</label>
+    <select class="form-select" id="loja-select" aria-label="Selecione a loja:">
+      <option value="1">Loja1</option>
+    </select>
+  </div>
+  <div style="display: flex; align-items: center">
+    <label for="datapicker">Data:</label>
+    <select
+      class="form-select"
+      #mes
+      (change)="changeDateValue()"
+      id="mes-select"
+      aria-label="Selecione o mês:"
+    >
+      <option value="4">Maio</option>
+      <option value="5">Junho</option>
+      <option value="6">Julho</option>
+    </select>
+    <select
+      class="form-select"
+      #ano
+      (change)="changeDateValue()"
+      id="ano-select"
+      aria-label="Selecione o ano:"
+    >
+      <option value="2022">2022</option>
+    </select>
+  </div>
+</div>

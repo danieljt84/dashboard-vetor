@@ -1,0 +1,26 @@
+<div class="bg-secondary-color text-center rounded p-4" style="height: 375px;">
+  <ng-container *ngIf="!isLoading">
+    <p-table
+      [value]="values"
+      [scrollable]="true"
+      scrollHeight="flex"
+      responsiveLayout="scroll"
+    >
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Setor</th>
+          <th>Margem</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-margemsecao>
+        <tr>
+          <td>{{ margemsecao.secao}}</td>
+          <td *ngIf="margemsecao.margem">{{ margemsecao.margem }}%</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </ng-container>
+  <ng-container *ngIf="isLoading">
+    <app-loading></app-loading>
+  </ng-container>
+</div>
