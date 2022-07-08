@@ -1,10 +1,8 @@
-<div class="bg-secondary-color text-center rounded p-4">
+<div class="bg-secondary-color text-center rounded p-4" style="height: 375px;">
   <div class="d-flex align-items-center justify-content-between mb-4">
     <h5 class="mb-0">Termômetro</h5>
   </div>
   <div>
-    <canvas baseChart class="chart-bar" [type]="'bar'" [datasets]="barChartData" [options]="barChartOptions"
-      [labels]="chartLabels">
-    </canvas>
+    <canvas id="gauge" style="height: 275px;"></canvas>
   </div>
 </div>

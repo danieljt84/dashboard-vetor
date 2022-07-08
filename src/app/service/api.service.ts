@@ -19,7 +19,7 @@ import { EventEmitterService } from './event-emitter.service';
 })
 export class ApiService {
   date: any;
-  private url = "https://vetor-api.herokuapp.com:8080/";
+  private url = "http://103.72.79.128:8081/";
   constructor(private http : HttpClient) {
     var today = new Date();
     this.date = today.toISOString().substring(0, 10).toString();
