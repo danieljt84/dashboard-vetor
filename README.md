@@ -1,7 +1,7 @@
 # DashboardVetor
 
 
-Take a look!
+Dê uma olhada!
 User: usuario
 Password: 1234
 
